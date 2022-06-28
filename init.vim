@@ -8,6 +8,8 @@
 :set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 :set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 :set list
+:set foldmethod=indent
+:set foldlevel=99
 filetype indent on
 
 inoremap jk <esc>
@@ -19,7 +21,10 @@ call plug#begin()
 Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar'
 "------------------=== Other ===----------------------
-Plug 'rafi/awesome-vim-colorschemes'
+Plug 'morhetz/gruvbox'
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'zaki/zazen'
+Plug 'yuttie/hydrangea-vim'
 " Plug 'ryanoasis/vim-devicons'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
