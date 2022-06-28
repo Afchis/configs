@@ -13,11 +13,9 @@
 filetype indent on
 
 inoremap jk <esc>
-" Enable folding with the spacebar
-nnoremap <space> za
+
 
 call plug#begin()
-
 "---------=== Code/project navigation ===-------------
 Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar'
@@ -34,10 +32,12 @@ Plug 'tpope/vim-commentary'
 "---------------=== Languages support ===-------------
 Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'ycm-core/YouCompleteMe', { 'do': './install.py --tern-completer' }
-
-source ~/.local/share/nvim/plugged/awesome-vim-colorschemes/colors/gruvbox.vim
-
 call plug#end()
+
+
+:colorscheme dracula
 
 "HotKeys:
 nnoremap <C-t> :NERDTreeToggle<CR>
+" Enable folding with the spacebar
+nnoremap <space> za
