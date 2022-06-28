@@ -33,7 +33,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 "---------------=== Languages support ===-------------
 Plug 'Vimjas/vim-python-pep8-indent'
-Plug 'valloric/youcompleteme'
+Plug 'ycm-core/YouCompleteMe', { 'do': './install.py --tern-completer' }
 
 source ~/.local/share/nvim/plugged/awesome-vim-colorschemes/colors/gruvbox.vim
 
