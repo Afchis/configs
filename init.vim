@@ -13,7 +13,8 @@
 filetype indent on
 
 inoremap jk <esc>
-
+" Enable folding with the spacebar
+nnoremap <space> za
 
 call plug#begin()
 
