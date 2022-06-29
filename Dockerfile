@@ -13,8 +13,7 @@ RUN apt-get update &&\
 
 
 ### --> install {vim, tmux} and plugins -->
-RUN apt-get update &&\
-    apt-get install -y vim\
+RUN apt-get install -y vim\
                        git\
                        curl\
                        tmux\
@@ -29,5 +28,9 @@ RUN apt-get update &&\
     mv ~/Downloads/configs/.vimrc ~/.vimrc &&\
     vim -E -s -u "$HOME/.vimrc" +PlugInstall +visual +qall &&\
     python ~/.vim/plugged/YouCompleteMe/install.py --force &&\
-    mv ~/Downloads/configs/.tmux.conf ~/.tmux.conf
+    mv ~/Downloads/configs/.tmux.conf ~/.tmux.conf &&\
+    git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm &&\
+    git clone https://github.com/tmux-plugins/tmux-sensible ~/.tmux/plugins/tmux-sensible &&\
+    git clone https://github.com/christoomey/vim-tmux-navigator.git ~/.tmux/plugins/vim-tmux-navigator &&\
+    echo alias "tmux="TERM=screen-256color-bce tmux"" >> ~/.bashrc
 
