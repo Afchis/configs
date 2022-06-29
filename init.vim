@@ -4,10 +4,10 @@
 :set fileformat=unix
 " :set nu rnu
 :set mouse=a
-":set cursorline cursorcolumn
+" :set cursorline cursorcolumn
 :set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 :set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
-:set list
+" :set list
 :set foldmethod=indent
 :set foldlevel=99
 filetype indent on
@@ -38,11 +38,18 @@ Plug 'puremourning/vimspector'
 call plug#end()
 
 
+" Set colorscheme:
 :colorscheme dracula
+
+" VimSpector settings:
 let g:vimspector_enable_mappings = 'HUMAN'
 
+" YouCompleteMe settings
+:set completeopt-=preview
+let g:ycm_auto_trigger = 1
 
-"HotKeys:
+
+" HotKeys:
 nnoremap <C-t> :NERDTreeToggle<CR>
 " Enable folding with the spacebar
 nnoremap <space> za
