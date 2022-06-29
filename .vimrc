@@ -3,12 +3,11 @@
 :set encoding=UTF-8
 :set autoindent
 :set fileformat=unix
-" :set nu rnu
+:set nu rnu
 :set mouse=a
-" :set cursorline cursorcolumn
 :set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
-:set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
-" :set list
+:set listchars=tab:>·,trail:~,extends:>,precedes:<,space:␣
+:set list
 :set foldmethod=indent
 :set foldlevel=99
 filetype indent on
