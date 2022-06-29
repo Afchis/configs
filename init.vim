@@ -16,6 +16,7 @@ inoremap jk <esc>
 
 
 call plug#begin()
+
 "---------=== Code/project navigation ===-------------
 Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar'
@@ -32,10 +33,14 @@ Plug 'tpope/vim-commentary'
 "---------------=== Languages support ===-------------
 Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'ycm-core/YouCompleteMe', { 'do': './install.py --tern-completer' }
+Plug 'puremourning/vimspector'
+
 call plug#end()
 
 
 :colorscheme dracula
+let g:vimspector_enable_mappings = 'HUMAN'
+
 
 "HotKeys:
 nnoremap <C-t> :NERDTreeToggle<CR>
