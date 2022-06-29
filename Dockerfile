@@ -16,15 +16,16 @@ RUN apt-get update &&\
 RUN apt-get install -y vim\
                        git\
                        curl\
-                       tmux &&\
-    apt install -y cmake\
-                   vim-nox\
-                   python3-dev\
-                   build-essential &&\
+                       tmux\
+                       cmake\
+                       vim-nox\
+                       python3-dev\
+                       build-essential &&\
     curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
               https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim &&\
     git clone https://github.com/Afchis/configs.git ~/Downloads/configs/ &&\
     mv ~/Downloads/configs/.vimrc ~/.vimrc &&\
-    vim +'PlugInstall --sync' +qa &&\
+    vim -E -s -u "$HOME/.vimrc" +PlugInstall +visual +qall &&\
     python ~/.vim/plugged/YouCompleteMe/install.py --force &&\
-    mv ~/Downloads/configs/.tmux.conf
+    mv ~/Downloads/configs/.tmux.conf ~/.tmux.conf
+
