@@ -1,4 +1,4 @@
-:set silense
+:set silent
 :set noswapfile
 :set encoding=UTF-8
 :set autoindent
