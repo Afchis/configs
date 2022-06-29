@@ -1,4 +1,4 @@
-:set term=screen-256color-bce
+:set term=xterm-256color
 :set noswapfile
 :set encoding=UTF-8
 :set autoindent
