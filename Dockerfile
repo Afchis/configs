@@ -13,7 +13,8 @@ RUN apt-get update &&\
 
 
 ### --> install {vim, tmux} and plugins -->
-RUN apt-get install -y vim\
+RUN apt-get update &&\
+    apt-get install -y vim\
                        git\
                        curl\
                        tmux\
@@ -21,6 +22,7 @@ RUN apt-get install -y vim\
                        vim-nox\
                        python3-dev\
                        build-essential &&\
+    apt-get clean &&\
     curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
               https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim &&\
     git clone https://github.com/Afchis/configs.git ~/Downloads/configs/ &&\
