@@ -20,6 +20,7 @@ call plug#begin()
 "---------=== Code/project navigation ===-------------
 Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar'
+Plug 'christoomey/vim-tmux-navigator'
 "------------------=== Other ===----------------------
 Plug 'morhetz/gruvbox'
 Plug 'dracula/vim', { 'as': 'dracula' }
