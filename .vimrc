@@ -32,7 +32,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 "---------------=== Languages support ===-------------
 Plug 'Vimjas/vim-python-pep8-indent'
-Plug 'ycm-core/YouCompleteMe' { 'do': './install.py --tern-completer --force' --verbose }
+Plug 'ycm-core/YouCompleteMe', { 'do': './install.py --tern-completer --force' --verbose }
 Plug 'puremourning/vimspector'
 
 call plug#end()
