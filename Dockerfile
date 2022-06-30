@@ -1,15 +1,6 @@
-FROM nvidia/cuda:11.5.0-base-ubuntu20.04
+FROM afchi:base
 ENV DEBIAN_FRONTEND noninteractive
 ARG PYTHON_VERSION=3.8
-
-
-### --> install python3.8 -->
-RUN apt-get update &&\
-    apt-get install -y python3.8\
-                       python3-pip &&\
-    apt-get clean &&\
-    ln -s /usr/bin/python3.8 /usr/local/bin/python &&\
-    ln -s /usr/bin/python3.8 /usr/local/bin/python3
 
 
 ### --> install {vim, tmux} and plugins -->
@@ -33,4 +24,7 @@ RUN apt-get install -y vim\
     git clone https://github.com/tmux-plugins/tmux-sensible ~/.tmux/plugins/tmux-sensible &&\
     git clone https://github.com/christoomey/vim-tmux-navigator.git ~/.tmux/plugins/vim-tmux-navigator &&\
     echo "alias tmux='TERM=term-256color-bce tmux'" >> ~/.bashrc
+
+
+RUN pip install torch=1.12
 
