@@ -24,7 +24,6 @@ Plug 'christoomey/vim-tmux-navigator'
 "------------------=== Other ===----------------------
 Plug 'morhetz/gruvbox'
 Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'zaki/zazen'
 Plug 'yuttie/hydrangea-vim'
 " Plug 'ryanoasis/vim-devicons'
 Plug 'vim-airline/vim-airline'
