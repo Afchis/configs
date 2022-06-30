@@ -5,3 +5,4 @@ torchvision>=0.13
 
 albumentations>=1.2
 audiomentations>=0.25
+torchtyping
