@@ -22,6 +22,6 @@ RUN apt-get install -y vim\
     mv ~/Downloads/configs/.tmux.conf ~/.tmux.conf &&\
     git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm &&\
     git clone https://github.com/tmux-plugins/tmux-sensible ~/.tmux/plugins/tmux-sensible &&\
-    git clone https://github.com/christoomey/vim-tmux-navigator.git ~/.tmux/plugins/vim-tmux-navigator
-    #echo "alias tmux='TERM=xterm-256color tmux -u'" >> ~/.bashrc
+    git clone https://github.com/christoomey/vim-tmux-navigator.git ~/.tmux/plugins/vim-tmux-navigator &&\
+    echo "alias tmux='TERM=xterm-256color tmux -u'" >> ~/.bashrc
 
