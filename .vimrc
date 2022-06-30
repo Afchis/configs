@@ -41,6 +41,7 @@ call plug#end()
 
 " Set colorscheme:
 :colorscheme dracula
+:colorscheme gruvbox
 
 " VimSpector settings:
 let g:vimspector_enable_mappings = 'HUMAN'
