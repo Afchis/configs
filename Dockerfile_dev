@@ -19,6 +19,9 @@ RUN apt-get install -y vim\
     mv ~/Downloads/configs/.vimrc ~/.vimrc &&\
     vim -E -s -u "$HOME/.vimrc" +PlugInstall +visual +qall &&\
     python ~/.vim/plugged/YouCompleteMe/install.py --force &&\
+    curl -fLo ~/.vim/pack/vimspector.tar.gz --create-dirs \
+          https://github.com/puremourning/vimspector/releases/download/2578008332/vimspector-linux-2578008332.tar.gz &&\
+    tar -xf ~/.vim/pack/vimspector.tar.gz -C ~/.vim/pack/ &&\
     mv ~/Downloads/configs/.tmux.conf ~/.tmux.conf &&\
     git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm &&\
     git clone https://github.com/tmux-plugins/tmux-sensible ~/.tmux/plugins/tmux-sensible &&\
