@@ -1,2 +1,7 @@
-numpy
-torch
+numpy>=1.22
+torch>=1.12
+torchaudio>=0.12
+torchvision>=0.13
+
+albumentations>=1.2
+audiomentations>=0.25
