@@ -25,3 +25,8 @@ RUN apt-get install -y vim\
     git clone https://github.com/christoomey/vim-tmux-navigator.git ~/.tmux/plugins/vim-tmux-navigator &&\
     echo "alias tmux='TERM=xterm-256color tmux -u'" >> ~/.bashrc
 
+
+### --> init git config -->
+RUN git config --global user.email Afchi.ivan@gmail.com &&\
+    git config --global user.name Ivan Protopopov
+
