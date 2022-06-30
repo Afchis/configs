@@ -14,6 +14,7 @@
 filetype indent on
 
 inoremap jk <esc>
+inoremap kj <esc>
 
 
 call plug#begin()
