@@ -52,7 +52,9 @@ let g:ycm_auto_trigger = 1
 
 
 " HotKeys:
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-t>j :NERDTree<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
 " Enable folding with the spacebar
 nnoremap <space> za
