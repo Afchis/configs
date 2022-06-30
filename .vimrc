@@ -1,18 +1,19 @@
-:set term=xterm-256color
-:set noswapfile
-:set encoding=UTF-8
-:set autoindent
-:set fileformat=unix
-:set nu rnu
-:set mouse=a
-:set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
-:set listchars=tab:>·,trail:~,extends:>,precedes:<,space:␣
-:set list
-:set foldmethod=indent
-:set foldlevel=99
-filetype indent on
+:set␣term=xterm-256color
+:set␣ttymouse=sgr
+:set␣mouse=a
+:set␣noswapfile
+:set␣encoding=UTF-8
+:set␣autoindent
+:set␣fileformat=unix
+:set␣nu␣rnu
+:set␣tabstop=8␣softtabstop=0␣expandtab␣shiftwidth=4␣smarttab
+:set␣listchars=tab:>·,trail:~,extends:>,precedes:<,space:␣
+:set␣list
+:set␣foldmethod=indent
+:set␣foldlevel=99
+filetype␣indent␣on
 
-inoremap jk <esc>
+inoremap␣jk␣<esc>
 
 
 call plug#begin()
