@@ -1,8 +1,11 @@
 :set term=xterm-256color
-:set colorcolumn=80  "Know where I am
+:set colorcolumn=80
 :highlight ColorColumn ctermbg=white
+:let python_highlight_all=1
+:set wildmenu
 :set ttymouse=sgr
 :set mouse=a
+:set nobackup
 :set noswapfile
 :set encoding=UTF-8
 :set autoindent
