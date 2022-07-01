@@ -52,6 +52,16 @@ call plug#end()
 " VimSpector settings:
 let g:vimspector_enable_mappings = 'HUMAN'
 :command initspector "!mv ~/.vimspector.json ./.vimspector.json"
+nnoremap <leader>ss :call vimspector#Launch()<CR>
+nnoremap <leader>sr :call vimspector#Reset()<CR>
+nnoremap <leader>sc :call vimspector#Continue()<CR>
+nnoremap <Leader>st :call vimspector#ToggleBreakpoint()<CR>
+nnoremap <Leader>sT :call vimspector#ClearBreakpoints()<CR>
+
+nmap <Leader>sk <Plug>VimspectorRestart
+nmap <Leader>sh <Plug>VimspectorStepOut
+nmap <Leader>sl <Plug>VimspectorStepInto
+nmap <Leader>sj <Plug>VimspectorStepOver
 
 
 " YouCompleteMe settings
