@@ -17,6 +17,7 @@ RUN apt-get install -y vim\
               https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim &&\
     git clone https://github.com/Afchis/configs.git ~/Downloads/configs/ &&\
     mv ~/Downloads/configs/.vimrc ~/.vimrc &&\
+    mv ~/Downloads/configs/.vimspector.json ~/.vimspector.json
     vim -E -s -u "$HOME/.vimrc" +PlugInstall +visual +qall &&\
     python ~/.vim/plugged/YouCompleteMe/install.py --force &&\
     ### --> ||| "install {tmux} and plugins" ||| -->
