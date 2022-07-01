@@ -51,7 +51,7 @@ call plug#end()
 
 " VimSpector settings:
 let g:vimspector_enable_mappings = 'HUMAN'
-:command Initspertor !mv ~/.vimspector.json ./.vimspector.json
+:command Initspertor !cp ~/.vimspector.json ./.vimspector.json
 nnoremap <leader>ss :call vimspector#Launch()<CR>
 nnoremap <leader>sr :call vimspector#Reset()<CR>
 nnoremap <leader>sc :call vimspector#Continue()<CR>
@@ -66,7 +66,7 @@ nmap <Leader>sj <Plug>VimspectorStepOver
 
 " YouCompleteMe settings
 :set completeopt-=preview
-let g:ycm_auto_trigger = 0.5
+let g:ycm_auto_trigger = 0
 
 
 " HotKeys:
