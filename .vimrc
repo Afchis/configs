@@ -51,6 +51,8 @@ call plug#end()
 
 " VimSpector settings:
 let g:vimspector_enable_mappings = 'HUMAN'
+:command initspector "!mv ~/.vimspector.json ./.vimspector.json"
+
 
 " YouCompleteMe settings
 :set completeopt-=preview
