@@ -51,7 +51,7 @@ let g:vimspector_enable_mappings = 'HUMAN'
 
 " YouCompleteMe settings
 :set completeopt-=preview
-let g:ycm_auto_trigger = 1
+let g:ycm_auto_trigger = 0.5
 
 
 " HotKeys:
