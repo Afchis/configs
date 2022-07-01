@@ -51,7 +51,7 @@ call plug#end()
 
 " VimSpector settings:
 let g:vimspector_enable_mappings = 'HUMAN'
-:command initspector "!mv ~/.vimspector.json ./.vimspector.json"
+:command Initspertor !mv ~/.vimspector.json ./.vimspector.json
 nnoremap <leader>ss :call vimspector#Launch()<CR>
 nnoremap <leader>sr :call vimspector#Reset()<CR>
 nnoremap <leader>sc :call vimspector#Continue()<CR>
