@@ -1,4 +1,6 @@
 :set term=xterm-256color
+:set colorcolumn=80  "Know where I am
+:highlight ColorColumn ctermbg=white
 :set ttymouse=sgr
 :set mouse=a
 :set noswapfile
