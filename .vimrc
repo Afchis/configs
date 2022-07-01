@@ -1,6 +1,6 @@
 :set term=xterm-256color
 :set colorcolumn=80
-:highlight ColorColumn ctermbg=white
+highlight ColorColumn ctermbg=white
 let python_highlight_all=1
 :set wildmenu
 :set ttymouse=sgr
