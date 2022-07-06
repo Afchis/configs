@@ -66,7 +66,8 @@ nmap <Leader>sj <Plug>VimspectorStepOver
 
 " YouCompleteMe settings
 :set completeopt-=preview
-let g:ycm_auto_trigger = 0
+let g:ycm_auto_trigger = 1
+nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 
 " HotKeys:
